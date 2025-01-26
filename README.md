@@ -10,4 +10,4 @@
   - Easy: number between 1 and 100
   - Medium: number between 1 and 500
   - Hard: number between 1 and 1000
--You can choose how many tries you want.
+- You can choose how many tries you want.
