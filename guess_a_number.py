@@ -3,7 +3,7 @@ import random
 
 print("Wellcome to Guess a Number mini game. Try to guess a random number between 1 and 100 in 10 tries")
 
-number_limit_based_on_difficulty = 0
+max_number_based_on_difficulty = 0
 tries = 0
 tries_count = 0
 
@@ -15,13 +15,13 @@ while True: #user can choose difficulty of the game
     difficulty = input("Please select Easy, Medium or Hard: ")
 
     if difficulty == "Easy":
-        number_limit_based_on_difficulty = 100
+        max_number_based_on_difficulty = 100
         break
     elif difficulty == "Medium":
-        number_limit_based_on_difficulty = 500
+        max_number_based_on_difficulty = 500
         break
     elif difficulty == "Hard":
-        number_limit_based_on_difficulty = 1000
+        max_number_based_on_difficulty = 1000
         break
     else:
         print("Invalid selection. Try again...")
@@ -35,13 +35,13 @@ while True: #user can choose number of tries
         print("Invalid input. Try again...")
 
 
-number_to_guess = random.randint(1, number_limit_based_on_difficulty) #computer set random number
+number_to_guess = random.randint(1, max_number_based_on_difficulty) #computer set random number
 
 
 while tries_count < tries:
-    players_guess = input(f"Guess the number from 1 to {number_limit_based_on_difficulty}: ") #read player's guess
+    players_guess = input(f"Guess the number from 1 to {max_number_based_on_difficulty}: ") #read player's guess
 
-    if int(players_guess) not in range(1, number_limit_based_on_difficulty + 1): #check player's guess for range of input
+    if int(players_guess) not in range(1, max_number_based_on_difficulty + 1): #check player's guess for range of input
         print("Your number is out of range.")
         continue
 
