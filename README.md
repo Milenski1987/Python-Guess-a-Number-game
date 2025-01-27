@@ -3,7 +3,7 @@
 <img align="center" width="400" height="400" src="https://i.ytimg.com/vi/E-Voff821tE/maxresdefault.jpg">
 
 ---
-## "Guess a number" built with Python explanation:
+## "Guess a number" built with Python overview:
 
 - "Guess a number" is simple game to guess randomly selected number.
 - You can choose from 3 dificulty levels:
