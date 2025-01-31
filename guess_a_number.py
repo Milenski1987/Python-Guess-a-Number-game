@@ -1,17 +1,22 @@
-import random
+from random import randint
+from time import sleep
 
 
 print("Wellcome to Guess a Number mini game. Try to guess a random number between 1 and 100 in 10 tries")
-
+sleep(1)
 max_number_based_on_difficulty = 0
 tries = 0
 tries_count = 0
 
 while True: #user can choose difficulty of the game
     print("Choose difficulty")
+    sleep(1)
     print("Easy: 10 tries and number range 1 - 100")
+    sleep(0.5)
     print("Medium: 10 tries and number range 1 - 500")
+    sleep(0.5)
     print("Hard: 10 tries and number range 1 - 1000")
+    sleep(0.5)
     difficulty = input("Please select Easy, Medium or Hard: ")
 
     if difficulty == "Easy":
@@ -35,7 +40,7 @@ while True: #user can choose number of tries
         print("Invalid input. Try again...")
 
 
-number_to_guess = random.randint(1, max_number_based_on_difficulty) #computer set random number
+number_to_guess = randint(1, max_number_based_on_difficulty) #computer set random number
 
 
 while tries_count < tries:
