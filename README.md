@@ -25,3 +25,4 @@
   &emsp;
     <a href="#"><img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Apple-Light.svg" title="Apple" **alt="Apple" width="40" height="40" /></a>
 </p>
+
